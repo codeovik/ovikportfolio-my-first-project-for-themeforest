@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const x = document.getElementById('portfolio');
     if (x) {
       x.innerHTML = data;
-      sr.reveal('.portfolio article');
+      sr.reveal('.portfolio .card');
     }
   });
 
