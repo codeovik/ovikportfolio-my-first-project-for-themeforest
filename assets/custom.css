@@ -1,0 +1,12 @@
+/* goole font link */
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+:root {
+  --myFont: "Anta", "Arial";
+  --primary: #00ff73;
+  --uiMatchColor: #000;
+  --mybg: #151515;
+  --mytext: #f8f9fa;
+  --myElementColorInDark: rgb(40, 40, 40);
+  --myElementColorInLight: rgb(215, 215, 215);
+  --default-transition-duration: 0.5s;
+}
