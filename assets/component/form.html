@@ -1,46 +1,43 @@
-<footer class="md:px-40 px-20 pt-20 bg-white/5 text-mytext">
-  <div class="flex flex-col md:flex-row gap-10 items-center justify-between mb-10">
-    <img src="./assets/logo.png" alt="" class="lg:h-30 h-20 my-10">
-    <div class="flex gap-10">
-      <div class="iconContainer"><a href="https://facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></div>
-      <div class="iconContainer"><a href="https://youtube.com/@codeovik" target="_blank"><i class="fa-brands fa-youtube"></i></a></div>
-      <div class="iconContainer"><a href="https://instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
-      <div class="iconContainer"><a href="https://linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
+<div class="title">
+  <span>Let's Contact</span>
+</div>
+<div class="lg:mx-40 mx-20 mb-40 flex flex-col lg:grid lg:grid-cols-[2fr_1fr] gap-30 form">
+  <form action="https://formsubmit.co/ovikbiswas01@gmail.com" method="POST" class="form1 flex flex-col lg:gap-20 child">
+    <!-- email config -->
+    <input type="hidden" name="_autoresponse" value="Thanks for send message. We will reply soon.">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="text" name="_honey" style="display:none">
+    <input type="hidden" name="_template" value="table">
+
+
+    <div class="grid lg:grid-cols-2 gap-0 lg:gap-20">
+      <!-- name -->
+      <div class="">
+        <label class="font-bold text-xs lg:text-xl text-primary">Your Name</label>
+        <input type="text" name="name" id="name" placeholder="Example: Ovik" required>
+      </div>
+      <!-- email -->
+      <div class="">
+        <label class="font-bold text-xs lg:text-xl text-primary">Your Email</label>
+        <input type="email" name="email" id="email" placeholder="Example: yourmail@email.com" required>
+      </div>
     </div>
+    <!-- subject -->
+    <div class="">
+      <label class="font-bold text-xs lg:text-xl text-primary">Subject</label>
+      <input type="text" name="subject" id="subject" placeholder="Example: yourmail@email.com" required>
+    </div>
+    <!-- message -->
+    <div class="">
+      <label class="font-bold text-xs lg:text-xl text-primary">Your Message</label>
+      <textarea name="message" id="message" placeholder="Example: Hello!" rows="4" required></textarea>
+    </div>
+    <div class="flex justify-between">
+      <a class="btn" id="saveDraft"><span class="">Save Draft<i class="fa-solid fa-arrow-right-long"></i></span></a>
+      <button class="btn"><span class="">Submit<i class="fa-solid fa-arrow-right-long"></i></span></button>
+    </div>
+  </form>
+  <div class="child">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d418.33658606179426!2d89.831961775283!3d23.59963987930877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fe3b2c12fc96e5%3A0x539b9acdc8d58c20!2sKamakhabinaloy!5e1!3m2!1sen!2sbd!4v1746706538790!5m2!1sen!2sbd" class="w-full aspect-square lg:aspect-auto lg:h-full rounded-lg lg:rounded-2xl border-1 lg:border-4 border-mytext/10" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
-  <hr class="opacity-30">
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-20">
-    <div class="flex flex-col">
-      <p class="font-bold text-xl lg:text-4xl lg:mb-8">Contact</p>
-        <div class="flex items-center mb-10 gap-6 md:gap-10">
-          <i class="fa-solid fa-phone text-primary bg-secondary rounded-full lg:text-base text-xs p-6 lg:p-8"></i>
-          <p class="md:text-base text-xs">+0123456789</p>
-        </div>
-        <div class="flex items-center mb-10 gap-6 md:gap-10">
-          <i class="fa-solid fa-envelope text-primary bg-secondary rounded-full lg:text-base text-xs p-6 lg:p-8"></i>
-          <p class="md:text-base text-xs">ovikbiswas01@gmail.com</p>
-        </div>
-        <div class="flex items-center gap-10">
-          <i class="fa-solid fa-earth-americas text-primary bg-secondary rounded-full lg:text-base text-xs p-6 lg:p-8"></i>
-          <p class="md:text-base text-xs">37/22 Chackbazar, Faridpur, Bangladesh</p>
-        </div>
-    </div>
-    <div class="flex flex-col my-10 lg:my-0 font-light">
-      <p class="font-font1 font-bold text-xl lg:text-4xl lg:mb-8">Site Map</p>
-      <a href="./index.html" class="text-sm lg:text-xl lg:leading-35 after:content-[''] after:h-1 after:w-0 hover:after:w-full after:transition-all relative after:absolute after:bg-primary after:bottom-5 hover:text-primary after:left-0 w-max">Home</a>
-      <a href="./about.html" class="text-sm lg:text-xl lg:leading-35 after:content-[''] after:h-1 after:w-0 hover:after:w-full after:transition-all relative after:absolute after:bg-primary after:bottom-5 hover:text-primary after:left-0 w-max">About</a>
-      <a href="./portfolio.html" class="text-sm lg:text-xl lg:leading-35 after:content-[''] after:h-1 after:w-0 hover:after:w-full after:transition-all relative after:absolute after:bg-primary after:bottom-5 hover:text-primary after:left-0 w-max">Portfolio</a>
-      <a href="./contact.html" class="text-sm lg:text-xl lg:leading-35 after:content-[''] after:h-1 after:w-0 hover:after:w-full after:transition-all relative after:absolute after:bg-primary after:bottom-5 hover:text-primary after:left-0 w-max">Contact</a>
-    </div>
-    <div class="flex flex-col font-light">
-      <p class="font-font1 text-xl lg:text-4xl font-bold lg:mb-8">External Links</p>
-      <a href="" class="text-sm lg:text-xl lg:leading-35 after:content-[''] after:h-1 after:w-0 hover:after:w-full after:transition-all relative after:absolute after:bg-primary after:bottom-5 hover:text-primary after:left-0 w-max">Buy it on Themeforest</a>
-    </div>
-  </div>
-  <p class="copyright block text-center text-xs mt-20" id="year"></p>
-  <script>
-    
-  </script>
-  
-  <div class="h-30"></div>
-</footer>
+</div>
