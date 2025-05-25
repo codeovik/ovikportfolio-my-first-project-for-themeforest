@@ -513,3 +513,46 @@ function closePopup() {
   // pause the video using YouTube API
   frame.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
 }
+
+
+
+// FAQ
+const faqItems = document.querySelectorAll('.faq-item');
+if (faqItems) {
+  faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    const toggleBtn = item.querySelector('.toggle-btn');
+  
+    question.addEventListener('click', () => {
+      // Close all other FAQs
+      faqItems.forEach(otherItem => {
+        if (otherItem !== item) {
+          otherItem.classList.remove('active');
+          otherItem.querySelector('.toggle-btn').textContent = '+';
+        }
+      });
+      // Toggle current FAQ
+      item.classList.toggle('active');
+    });
+  });
+}
+
+
+// Clients review
+const ratingElements = document.querySelectorAll('.rating');
+if(ratingElements) {
+  ratingElements.forEach(p => {
+  const rating = parseInt(p.textContent.trim());
+
+  let stars = '';
+  for (let i = 1; i <= 5; i++) {
+    if (i <= rating) {
+      stars += '<i class="fa-solid fa-star"></i>';
+    } else {
+      stars += '<i class="fa-regular fa-star"></i>';
+    }
+  }
+
+  p.innerHTML = stars;
+});
+}
